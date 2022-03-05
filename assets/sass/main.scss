@@ -1,0 +1,147 @@
+// Variable
+$color--pinkLight: #ffe4e1;
+$color--blueLight: #e6e6fa;
+$color--blue: #3432fe;
+$color--red: #fa373d;
+$color--brow: #800001;
+$color--purple: #663399;
+$color--white: #fff;
+//
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html {
+   font-size: 62.5%;
+   font-family: 'Montserrat', sans-serif;
+}
+// COMMON
+.margin--auto {
+   margin: 0 auto;
+}
+.margin--top {
+   margin-top: 20px;
+}
+.margin--left {
+   margin-left: 145px;
+}
+//
+#main {
+   width: 1200px;
+   margin: 0 auto;
+}
+// ! Session One
+.sessionOne {
+   width: 500px;
+   margin: 20px auto 0;
+   //    Head
+   .sessionOne__head {
+      background-color: $color--pinkLight;
+      text-align: center;
+      .head__heading {
+         color: $color--brow;
+         font-size: 3rem;
+         padding: 16px 24px;
+         border-top: 4px double $color--brow;
+         border-bottom: 4px double $color--brow;
+      }
+   }
+   //    Text
+   .text {
+      &__head {
+         font-size: 2.5rem;
+      }
+      &__sub {
+         display: block;
+         font-size: 1.4rem;
+         .opt {
+            color: $color--red;
+         }
+      }
+   }
+   //    BOX
+   .sessionBox {
+      padding-left: 22px;
+      &__box {
+         border: 3px solid $color--blue;
+         background-color: $color--blueLight;
+         width: 392px;
+         .box__textHead {
+            font-size: 1.6rem;
+            display: inline-block;
+            margin: 30px 0 20px;
+            padding-left: 20px;
+            color: #3432fe;
+            font-weight: bold;
+         }
+         .box__list {
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1.4;
+            margin: 0 0 25px 65px;
+            & li:last-child {
+               color: #fa373d;
+            }
+         }
+      }
+   }
+}
+// ! Session Two
+.sessionTwo {
+   width: 680px;
+   margin: 100px auto;
+   overflow: hidden;
+   //    Header
+   header .container {
+      background-color: $color--purple;
+      color: $color--white;
+      & h1 {
+         padding: 12px 0;
+      }
+   }
+   .container h2 {
+      padding: 16px 0 10px;
+   }
+   .container {
+      .card-row {
+         width: 400px;
+         margin: auto;
+         .card {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            img {
+               width: 100%;
+               border-radius: 5px;
+            }
+            h3 {
+               margin: 10px 0 5px;
+               color: $color--purple;
+            }
+            p {
+               line-height: 1.4;
+               color: #333;
+            }
+            a {
+               text-decoration: none;
+               color: $color--white;
+               padding: 4px 8px;
+               background-color: $color--purple;
+               margin-top: 10px;
+               display: inline-block;
+               border-radius: 5px;
+               transition: all 0.3 linear;
+               &:hover {
+                  opacity: 0.5;
+                  transform: translateY(-3px);
+               }
+            }
+         }
+      }
+   }
+   footer .container {
+      text-align: center;
+   }
+}
